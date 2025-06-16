@@ -2,9 +2,6 @@
 
 Interactive command-line TODO list application built in Java, demonstrating fundamental programming concepts and clean code practices.
 
-![Java](https://img.shields.io/badge/Java-17+-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
 ## 🚀 Features
 
 - ✅ **Add tasks** with name and description
