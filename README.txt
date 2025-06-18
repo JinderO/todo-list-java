@@ -4,29 +4,26 @@ Interactive command-line TODO list application built in Java, demonstrating fund
 
 ## 🚀 Features
 
-- ✅ **Add tasks** with name and description
-- ✏️ **Edit existing tasks** 
-- 🗑️ **Delete tasks** from list
-- ✓ **Mark tasks as completed**
-- 📋 **View all tasks** with status indicators
-- 🛡️ **Input validation** with error handling
-- 🎨 **User-friendly interface** with emojis and clear formatting
+- Add tasks with name and description
+- Edit existing tasks 
+- Delete tasks from list
+- Mark tasks as completed
+- View all tasks with status indicators
+- Input validation with error handling
+- User-friendly interface with emojis and clear formatting
 
-## 📸 Demo
+## Demo
 
+```
 Vítej v aplikaci TO-DO-LIST
 
 =====SEZNAM ÚKOLŮ=====
-
 [○] Nakoupit potraviny – Mléko, chléb, vajíčka
 [✓] Dokončit projekt – Java TO-DO aplikace
 [○] Zavolat doktorovi – Objednat se na kontrolu
 
-
-
-1# Přidat | 2# Upravit | 3# Smazat | 4# Hotovo | 5# Konec *
-
-
+1# Přidat | 2# Upravit | 3# Smazat | 4# Hotovo | 5# Konec
+```
 
 ## 🛠️ Technologies Used
 
@@ -36,12 +33,15 @@ Vítej v aplikaci TO-DO-LIST
 - **Object-Oriented Programming** - Classes, encapsulation, methods
 - **Input Validation** - Custom validator class with error handling
 
-## 📁 Project Structure
+## Project Structure
+
+```
 src/
 ├── ovadek/todolist/
 │   ├── Main.java           # Main application class with UI
 │   ├── Task.java           # Task entity with properties
 │   └── InputValidator.java # Input validation utilities
+```
 
 ## 🎯 Key Programming Concepts Demonstrated
 
@@ -52,40 +52,46 @@ src/
 - **String Formatting** - Professional output formatting
 - **Method Separation** - Clean, single-responsibility methods
 
-## 🏃‍♂️ How to Run
+## How to Run
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/todo-list-java.git
-   cd todo-list-java
+**Clone the repository**
+```bash
+git clone https://github.com/JinderO/todo-list-java.git
+cd todo-list-java
+```
 
-Compile the Java files
-bashjavac -d bin src/ovadek/todolist/*.java
+**Compile the Java files**
+```bash
+javac -d bin src/ovadek/todolist/*.java
+```
 
-Run the application
-bashjava -cp bin ovadek.todolist.Main
+**Run the application**
+```bash
+java -cp bin ovadek.todolist.Main
+```
 
+## What I Learned
 
-💡 What I Learned
+- **CRUD Operations** - Create, Read, Update, Delete functionality
+- **Input Validation** - Handling edge cases and user errors
+- **Collections Framework** - Working with ArrayList and iterations
+- **Exception Handling** - Graceful error management
+- **Code Organization** - Separating concerns into different classes
+- **User Experience** - Creating intuitive command-line interfaces
 
-CRUD Operations - Create, Read, Update, Delete functionality
-Input Validation - Handling edge cases and user errors
-Collections Framework - Working with ArrayList and iterations
-Exception Handling - Graceful error management
-Code Organization - Separating concerns into different classes
-User Experience - Creating intuitive command-line interfaces
+## Potential Improvements
 
-🔧 Potential Improvements
+- Save tasks to file for persistence
+- Add due dates and priorities
+- Implement task categories
+- Add search functionality
+- Create GUI version
 
- Save tasks to file for persistence
- Add due dates and priorities
- Implement task categories
- Add search functionality
- Create GUI version
+## Code Highlights
 
-📝 Code Highlights
-Clean Input Validation:
-javapublic static int getValidInteger(String prompt, int min, int max) {
+**Clean Input Validation:**
+```java
+public static int getValidInteger(String prompt, int min, int max) {
     while(true) {
         try {
             int value = Integer.parseInt(scanner.nextLine().trim());
@@ -97,19 +103,27 @@ javapublic static int getValidInteger(String prompt, int min, int max) {
         }
     }
 }
-Professional toString() Implementation:
-java@Override
+```
+
+**Professional toString() Implementation:**
+```java
+@Override
 public String toString() {
     return String.format("[%s] %s – %s", 
         (completed ? "✓" : "○"), name, description);
 }
-👨‍💻 Author
+```
 
-Jindřich Ovádek - Java Developer in Training
+## 👨‍💻 Author
 
-Demonstrates strong grasp of OOP principles
-Clean, readable code with proper error handling
-User-focused design with intuitive interface
+**Jindřich Ovádek** - *Java Developer in Training* - [@JinderO](https://github.com/JinderO)
 
+### Technical Achievements
 
-This project showcases fundamental Java programming skills including object-oriented design, collections management, exception handling, and user input validation.
+- **Strong OOP Foundation** - Demonstrates solid understanding of object-oriented principles
+- **Clean Code Practices** - Readable, well-structured code with proper error handling
+- **User-Focused Design** - Intuitive interface with comprehensive input validation
+- **CRUD Mastery** - Complete implementation of data manipulation operations
+- **Exception Handling** - Professional approach to error management and user feedback
+
+This project showcases **fundamental Java programming skills** including **object-oriented design**, **collections management**, **exception handling**, and **user input validation**. The implementation demonstrates **strong foundational knowledge** essential for **Java developer** positions.
